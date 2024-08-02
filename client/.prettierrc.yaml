@@ -9,3 +9,6 @@ overrides:
     - files: "*.svelte"
       options:
           parser: svelte
+    - files: "package.json"
+      options:
+          tabWidth: 2

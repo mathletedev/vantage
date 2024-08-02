@@ -2,7 +2,13 @@
 export default {
     content: ["./src/**/*.{svelte,ts,html}"],
     theme: {
-        extend: {}
+        fontFamily: {
+            sans: ["Lato"]
+        }
     },
-    plugins: []
+    plugins: [
+        require("@catppuccin/tailwindcss")({
+            defaultFlavour: "mocha"
+        })
+    ]
 };
